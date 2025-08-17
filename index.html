@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rooftop Craft Showcase</title>
+  <meta name="description" content="A clean, fast static site template ready for GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <h1>Rooftop Craft Showcase</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="https://github.com/new">Deploy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Clean template. GitHub-ready.</h2>
+      <p>Replace this content with your site’s HTML, CSS, and JS or drop your assets in <code>/assets</code>.</p>
+      <button id="cta">Say Hi</button>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>This is a minimal static site scaffold you can commit directly to a GitHub repo and enable GitHub Pages.</p>
+    </section>
+
+    <section id="gallery" class="grid">
+      <div class="tile">🎨</div>
+      <div class="tile">🧵</div>
+      <div class="tile">🧩</div>
+      <div class="tile">🪡</div>
+      <div class="tile">🧶</div>
+      <div class="tile">🧪</div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <form onsubmit="return false">
+        <label>
+          Your email
+          <input id="email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="4" placeholder="Hello!"></textarea>
+        </label>
+        <button id="send">Send</button>
+        <p id="status" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Rooftop Craft Showcase. MIT License.</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
